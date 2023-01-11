@@ -1,0 +1,29 @@
+.list{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    justify-content: flex-start;
+   align-items: flex-start;
+   gap: 15px;
+   padding: 5px;
+   background-color: antiquewhite;
+}
+.list>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 50%;
+margin: auto;
+border-radius: 5px;
+padding: 5px;
+ background-color: rgb(138, 126, 115);
+}
+.list>div>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.head{
+    margin: auto;
+    text-align: center;
+    
+}
