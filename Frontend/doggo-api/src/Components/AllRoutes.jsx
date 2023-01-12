@@ -19,7 +19,11 @@ export const AllRoutes = () => {
             <Puppy/>
           </PrivateRoute>
         } />
-        <Route path="/search" element={<Search/>} />
+        <Route path="/search" element={
+          <PrivateRoute>
+            <Search/>
+          </PrivateRoute>
+        } />
     </Routes>
   )
 }
