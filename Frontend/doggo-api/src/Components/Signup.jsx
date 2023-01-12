@@ -16,7 +16,7 @@ export const Signup = () => {
                 email:email,
                 password:password,
             }
-            axios.post("http://localhost:8000/signup",payload).then((res)=>{
+            axios.post("https://ideotic.onrender.com/signup",payload).then((res)=>{
         
         if(res){
             if(res.data.msg=="signup sucess"){

@@ -15,7 +15,7 @@ const Login = () => {
         password: password,
       };
 
-      axios.post("http://localhost:8000/login", payload).then((res) => {
+      axios.post("https://ideotic.onrender.com/login", payload).then((res) => {
         console.log(res);
         if (res.data.msg == "Login Sucess") {
           localStorage.setItem("isAuth", true);
