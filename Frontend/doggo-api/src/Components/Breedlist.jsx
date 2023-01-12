@@ -15,7 +15,6 @@ export const Home = () => {
     const [data,setData]=useState([])
     useEffect(()=>{
         getData().then((res)=>{
-            // console.log(res);
         let x=Object.keys(res.message)
           setData(x)
         })

@@ -1,14 +1,14 @@
 
 
-// import { Navigate } from "react-router-dom";
-// function PrivateRoute({children}){
+import { Navigate } from "react-router-dom";
+function PrivateRoute({children}){
 
-//     const isAuth=localStorage.getItem("isAuth")||null
-//      console.log(isAuth);
-//     if(!isAuth){
-//         return <Navigate to="/login"/>
-//     }
-//     return children
+    const isAuth=localStorage.getItem("isAuth")||false
+     console.log(isAuth);
+    if(!isAuth){
+        return <Navigate to="/login"/>
+    }
+    return children
 
-//   }
-//   export default PrivateRoute
+  }
+  export default PrivateRoute

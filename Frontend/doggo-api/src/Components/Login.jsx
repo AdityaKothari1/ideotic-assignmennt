@@ -9,6 +9,8 @@ const Login = () => {
     const naviagte=useNavigate()
     const [emailmsg,setEmailMsg]=useState("")
     const [setPass,setPassMsg]=useState("")
+    // const location=useLocation()
+    // console.log(location)
     const handleLogin=()=>{
         if(email&&password){
             const payload={
@@ -49,7 +51,7 @@ const Login = () => {
     <h2>Login</h2>
     <input type="text" placeholder='Email'value={email} onChange={e=>setEmail(e.target.value)}  />
      {emailmsg&&<p>{`*${emailmsg}`}</p>}
-        <input type="text" placeholder='Password' value={password} onChange={e=>setPassword(e.target.value)} />
+        <input type="password" placeholder='Password' value={password} onChange={e=>setPassword(e.target.value)} />
         {setPass&&<p>{`*${setPass}`}</p>}
      <button onClick={handleLogin}>Login</button>
     </div>

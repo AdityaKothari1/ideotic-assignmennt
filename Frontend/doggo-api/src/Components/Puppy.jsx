@@ -11,7 +11,6 @@ export const Puppy = () => {
      console.log(val);
     useEffect(()=>{
         axios.get(`https://dog.ceo/api/breed/${val}/images`).then((res)=>{
-            // console.log(res.data.message)
             setData(res.data.message)
         })
     },[])
